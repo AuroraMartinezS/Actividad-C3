@@ -25,10 +25,10 @@ function HacerLogin(){
 
     if(inputNombre.value.trim() == usuario && inputContrasena.value.trim() == contra){
         
-        /*const payload = { user: inputNombre.value, exp: "1h"}; 
+        const payload = { user: inputNombre.value, exp: "1h"}; 
         const token = btoa(JSON.stringify(payload));
 
-        localStorage.setItem("jwt", token);*/
+        localStorage.setItem("jwt", token);
         window.location.href = "PokeApi_DeUno_222397/pokemon.html"
     }else{
 
@@ -47,4 +47,5 @@ function HacerLogin(){
         }
 
     }
+
 }
