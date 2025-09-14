@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Pokemon Web App</title>
+</head>
+
+<body>
+
+    <div>
+        <button id="cerrarSesionBoton" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+    <!--CONTENIDO-->
+
+    <section id="contenedor">
+        <div id="buscador">
+            <div id="logo">
+                <img src="assets/PokemonLogo.png" width="100%" alt="" id="logoPokemon">
+            </div>
+            <p style="margin: 10px;">¡Ingresa el nombre o número de tu Pokemon favorito!</p>
+            <div id="barraBusqueda">
+                <input id="entrada" placeholder="Nombre o número" autocomplete="off" min="1" required maxlength="20"/>
+                <button id="botoncito" onclick="ConsultarPokemon()">Buscar</button>
+            </div>
+        </div>
+
+        <div id="ContenedorPokemon">
+           <!-- <div id="sprite">
+                <img src="assets/sprite.png" width="100%" alt="" id="spritesPokemon">
+            </div>-->
+            <div id="numero_pokemon">570</div>
+            <div id="nombre_pokemon">Zorua</div>
+
+            <div id="tipo_pokemon">
+                <p class="tipo_color">Fantasma</p>
+            </div>
+
+            <div id="seccionImgPokemon">
+                <img id="imgPoke" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png"
+                    width="100%" alt="">
+            </div>
+
+            <div id="atributosFisicos">
+                <div id="altura_pokemon">Altura: 7 mts</div>
+                <div id="peso_pokemon">Peso: 125 kg</div>
+            </div>
+
+            <audio controls id="reproductorPokemon">
+                <source src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/570.ogg" />
+            </audio>
+        </div>
+    </section>
+</body>
+<script src="js/script.js"></script>
+
+</html>
